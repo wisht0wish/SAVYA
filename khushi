@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savya - Fashion Redefined</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="greeting">Welcome to Savya</h1>
+        <p>Experience Fashion Like Never Before.</p>
+        <a href="#about" class="btn" id="shopNowBtn">Shop Now</a>
+    </header>
+
+    <section class="content" id="about">
+        <h2>Why Choose Savya?</h2>
+        <p>Savya brings you the trendiest and most comfortable clothing with a perfect blend of style and quality. Elevate your fashion game today!</p>
+    </section>
+
+    <section class="gallery">
+        <h2>Our Collection</h2>
+        <div class="image-container">
+            <img src="fashion1.jpg" alt="Trendy Outfit">
+            <img src="fashion2.jpg" alt="Casual Wear">
+            <img src="fashion3.jpg" alt="Street Style">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Savya Fashion. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+echo "# SAVYA" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/wisht0wish/SAVYA.git
+git push -u origin main
+
