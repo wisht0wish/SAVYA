@@ -1,0 +1,38 @@
+// Dynamic Greeting Message
+function updateGreeting() {
+    let greetingText = document.getElementById("greeting");
+    let hour = new Date().getHours();
+
+    if (hour < 12) {
+        greetingText.innerHTML = "Good Morning! Welcome to Savya Fashion";
+    } else if (hour < 18) {
+        greetingText.innerHTML = "Good Afternoon! Welcome to Savya Fashion";
+    } else {
+        greetingText.innerHTML = "Good Evening! Welcome to Savya Fashion";
+    }
+}
+
+// Smooth Scrolling Effect
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Button Click Alert
+document.getElementById("shopNowBtn").addEventListener("click", function() {
+    setTimeout(() => {
+        alert("Welcome to Savya! Discover the latest fashion trends.");
+    }, 500);
+});
+
+// Change Background Color on Mouse Move
+document.addEventListener("mousemove", function() {
+    document.body.style.backgroundColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+});
+
+// Call the function to update greeting
+updateGreeting();
